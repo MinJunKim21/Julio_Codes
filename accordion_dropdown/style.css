@@ -1,1 +1,118 @@
-/* @import url(구글폰트); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+/* basic reset 10px=1rem 으로 쉽게 앞으로 계산하기 위해서 최상위에 62.5%를 설정해둠 */
+
+body {
+   font-family: 'Poppins', sans-serif;
+   background-color: #eef3fd;
+   font-size: 1.6rem;
+   padding: 5rem;
+}
+
+a{
+   text-decoration: none;
+}
+
+button {
+   background-color: transparent;
+   outline: none;
+   border: none;
+}
+
+.accordion {
+   background-color: white;
+   max-width: 70rem;
+}
+
+.accordion-header {
+   padding: 6.5rem 6.5rem 7rem;
+}
+
+.accordion-title {
+   margin-bottom: 4rem;
+}
+
+.border-bottom {
+   border: 3px solid #eff4fc;
+   border-bottom: none;
+}
+
+.accordion-item {
+   padding: 6.5rem 6.5rem 7rem;
+}
+
+.accordion-item:not(:first-of-type) {
+   padding-top: 0;
+}
+
+.accordion-item-inner {
+   padding: 2rem;
+   transition: background-color  .25s;
+   cursor: pointer;
+}
+
+.accordion-item-inner:hover {
+   background-color: #eef3fd;
+}
+
+.accordion-item-header {
+   display: flex;
+   align-items: center;
+   column-gap: 1.5rem;
+}
+
+.accordion-item-button {
+   width: 4rem;
+   height: 4rem;
+   border-radius: 50%;
+   font-size: 2rem;
+   transition: background-color .25s;
+
+}
+.subtract-icon {
+   display: none;
+}
+
+.accordion-item-body {
+   margin: 0rem 5.5rem;
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height .25s, margin .25s;
+}
+
+.accordion-item-description {
+   margin-bottom: 4rem;
+}
+.accordion-body-button {
+   padding: 1rem 4rem;
+   background-color: #6b63fa;
+   color: white;
+   border-radius: 2rem;
+   display: inline-block;
+}
+
+.active .accordion-item-body {
+   max-height: 25rem;
+   margin: 4rem 5.5rem;
+}
+
+.active .accordion-item-button {
+   background-color: white;
+}
+
+.active .subtract-icon {
+   display: block;
+}
+
+.active .add-icon {
+   display: none;
+}
