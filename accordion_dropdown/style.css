@@ -101,7 +101,6 @@ button {
 }
 
 .active .accordion-item-body {
-   max-height: 25rem;
    margin: 4rem 5.5rem;
 }
 
@@ -115,4 +114,8 @@ button {
 
 .active .add-icon {
    display: none;
+}
+
+.accordion-item-inner.active {
+   background-color: #eef3fd;
 }
